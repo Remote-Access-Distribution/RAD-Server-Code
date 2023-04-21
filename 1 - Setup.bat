@@ -6,3 +6,6 @@ cd..
 python -m venv myenv
 myenv\Scripts\python.exe -m pip install --upgrade pip
 myenv\Scripts\pip.exe install -r requirements.txt
+
+cd django_app\
+..\myenv\Scripts\python.exe manage.py createsuperuser

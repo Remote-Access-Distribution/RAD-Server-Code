@@ -10,6 +10,7 @@ Download and Extract this repository. It would be recommended to extract the fil
 Run `Setup.bat`.
 
 Run through the python install ensuring you check add to path box and disable path length.
+You will be prompted to create a superuser account, create a username and password. The email address field is optional.
 
 ### Manual Install
 Firstly you will need to install python and mosquitto. Files have been provided for ease. Ensure when installing python you check add to path and disable path length.
@@ -21,7 +22,14 @@ cd desktop/<folder>
 python -m venv myenv
 myenv\Scripts\activate.bat
 pip install -r requirements.txt
+python manage.py createsuperuser
 ```
+
+In order to gain access the the \admin to edit and delete data you will need to create a superuser account. From the admin site you will be able to add additional users
+``` bash
+python manage.py createsuperuser
+```
+
 Now everything is installed to run the web server
 
 ## Start up
