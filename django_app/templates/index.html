@@ -24,7 +24,7 @@
 					<label for="socket-off">Socket {{socketNum}}</label>
 					<input type="button" name="socket-off" value="Off" onclick="sendMqttMessage('{{socketDatas.distroID}}', '{{socketNum}}', 'False')" >
 					<input type="button" name="socket-on" value="On" onclick="sendMqttMessage('{{socketDatas.distroID}}', '{{socketNum}}', 'True')" >
-					<nobr>{{current}} Amps</nobr>
+					<nobr>{{socketDatas.currentValue}} Amps</nobr>
 					<br></br>
 
 					<div id="graphs">
