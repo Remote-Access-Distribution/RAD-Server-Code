@@ -41,7 +41,7 @@ Now everything is installed to run the web server
 Close the three Command Prompts that are open.
 
 ## Usage
-Ensure you are connected to RAD-1 access point, password is 'Testing123'
+Ensure you are connected to RAD-1 access point, password is 'testing123'
 Open up a web browser e.g. Google Chrome
 Navigate to 192.168.4.2:8000
 
