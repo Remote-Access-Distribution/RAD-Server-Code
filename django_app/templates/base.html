@@ -1,0 +1,39 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en-GB">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="{% static 'style.css' %}"/>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="{% static 'navScripts.js' %}"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script src="{% static 'mqttScripts.js' %}"></script>
+
+		<link media="all" href="{% static 'nvd3/build/nv.d3.css' %}" type="text/css" rel="stylesheet" />
+		<script type="text/javascript" src="{% static 'd3/d3.min.js' %}"></script>
+		<script type="text/javascript" src="{% static 'nvd3/build/nv.d3.min.js' %}"></script>
+
+		{%block head%}   
+		{%endblock head%}
+	</head>
+
+	<body>
+		<h1>Home</h1>
+		<div class="nav" id="nav">
+			<a class="active" href="{% url 'index' %}">Home</a>
+			<a href="{% url 'distros' %}">Add a Distro</a>
+			<a href="{% url 'traders' %}">Add a Trader</a>
+			<a href="{% url 'trader_distros' %}">Link a Trader with a Distro</a>
+			<a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+		
+		{%block content%}   
+		{%endblock content%}  
+		
+		{%block scripts%}
+		{%endblock scripts%}
+	</body>
+</html>

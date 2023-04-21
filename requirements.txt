@@ -1,0 +1,14 @@
+asgiref
+Django
+django-bower
+django-nvd3
+Jinja2
+MarkupSafe
+mysqlclient
+paho-mqtt
+python-nvd3
+python-slugify
+six
+sqlparse
+Unidecode
+whitenoise

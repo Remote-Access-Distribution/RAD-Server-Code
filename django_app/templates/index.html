@@ -1,0 +1,36 @@
+{% extends 'base.html'%}
+{%block head%}
+	<meta http-equiv="refresh" content="1.1">
+	{% load_chart charttype chartdata1 'test' extra %}
+    {% load_chart charttype chartdata1 chartcontainer1 extra %}
+    {% load_chart charttype chartdata2 chartcontainer2 extra %}
+    {% load_chart charttype chartdata3 chartcontainer3 extra %}
+    {% load_chart charttype chartdata4 chartcontainer4 extra %}
+{%endblock head%}
+
+{%block content%}
+{% csrf_token %}
+	<h1>Send MQTT Message</h1>
+	{% for distroID, distro in distros.items %}
+		{% for distroID2, socketDatas in distroData.items %}
+			{% if distroID == distroID2 %}
+				<h2>Distro {{distroID}} - Location: {{distro.distro_location}}</h2>
+				{% for socketNum, socketDatas in socketDatas.items %}
+					<label for="socket-off">Socket {{socketNum}}</label>
+					<input type="button" name="socket-off" value="Off" onclick="sendMqttMessage('{{socketDatas.distroID}}', '{{socketNum}}', 'False')" >
+					<input type="button" name="socket-on" value="On" onclick="sendMqttMessage('{{socketDatas.distroID}}', '{{socketNum}}', 'True')" >
+					<nobr>{{current}} Amps</nobr>
+					<br></br>
+
+					<div id="graphs">
+						{% include_chart_jscss %}
+						{% include_container chartcontainer1 200 500 %}
+						{% include_container chartcontainer2 200 500 %}
+						{% include_container chartcontainer3 200 500 %}
+						{% include_container chartcontainer4 200 500 %}
+					</div>
+				{% endfor %}
+			{% endif %}
+		{% endfor %}
+	{% endfor %}
+{%endblock content%}
