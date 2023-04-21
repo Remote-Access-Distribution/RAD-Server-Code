@@ -24,7 +24,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-zvq5iqb!2*-+q#+$u_y4s)kek$+z!6wk_nl-xyo(t49()sy)4c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 99999 # Allows more to be deleted at once
 
 ALLOWED_HOSTS = ["localhost", "100.74.80.252", "100.86.10.60", "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa"]
