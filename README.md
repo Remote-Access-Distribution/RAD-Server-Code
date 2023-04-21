@@ -35,3 +35,13 @@ After that you can run `Startup.bat` which will start the necessary components f
 ## Shut down
 ### Windows:
 Close the two Command Prompts open.
+
+## Usage
+Ensure you are connected to RAD-1 access point, password is 'Testing123'
+Open up a web brower e.g. Google Chrome
+Navigate to 192.168.4.2:8000
+
+In order to see a distro to control, you will need to navigate to the distros page using the navigation bar and add a new distro and define its location if required, once the server starts recieving data from the ESP32 then you will be able to control using the buttons.
+
+## Future Development
+Allow socket name to be named rather than just displaying 'Socket 1'
