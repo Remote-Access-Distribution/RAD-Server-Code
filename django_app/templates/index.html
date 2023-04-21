@@ -1,4 +1,9 @@
 {% extends 'base.html'%}
+<!-- 
+	This extends the base.html and expands on it using block tags
+	The template thats is used for the home page, which is then inteperated by django.
+	this allows more complex code such as for loops to be placed within HTML code
+ -->
 {%block head%}
 	<meta http-equiv="refresh" content="1.1">
 	{% load_chart charttype chartdata1 'test' extra %}

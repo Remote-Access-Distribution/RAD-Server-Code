@@ -6,6 +6,8 @@ from .models import Traders
 from .models import Distros
 from .models import TraderToDistro
 
+# Creates forms based on the corresponding model defined in models.py
+
 class TradersForm(forms.ModelForm):
     class Meta:
         model = Traders

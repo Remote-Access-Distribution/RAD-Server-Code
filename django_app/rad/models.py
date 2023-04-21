@@ -1,6 +1,8 @@
 from django.db import models
 from django.utils import timezone
 
+# Creates models for the tables within the database and allows the database to be manipulated
+
 class Traders(models.Model):
     trader_name = models.CharField(max_length=200)
     

@@ -2,6 +2,8 @@ from django.urls import path
 
 from . import views
 
+# Adds all the URLs so they can be navigated to
+
 urlpatterns = [
     path('', views.index, name='index'),
     path('traders/', views.traders, name='traders'),

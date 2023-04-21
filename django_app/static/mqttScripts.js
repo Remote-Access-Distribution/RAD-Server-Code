@@ -1,3 +1,4 @@
+// This is javascript to send a post request in with the distro data
 function sendMqttMessage(distro, socket, state) {
     $.ajax({
         url: 'distro_change_state_request/',

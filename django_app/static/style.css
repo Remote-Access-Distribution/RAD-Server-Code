@@ -53,6 +53,7 @@
   }
 }
 
+/* The css for all the graphs showing the data */
 #graphs {
   position:absolute; 
   left:250px;

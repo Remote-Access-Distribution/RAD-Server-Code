@@ -11,6 +11,8 @@ from .forms import TraderToDistrosForm
 from .models import Distros, DistroCurrentData
 from .utils import send_mqtt_message
 
+# This is what appears when the user navigates to the corresponding webpage
+
 def index(request):
     distros = {}
     distroData = {}
