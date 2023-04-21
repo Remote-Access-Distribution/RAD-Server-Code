@@ -45,7 +45,7 @@ After that you can run `Startup.bat` which will start the necessary components f
 Close the two Command Prompts open.
 
 ## Usage
-Ensure you are connected to RAD-1 access point, password is 'Testing123'
+Ensure you are connected to RAD-1 access point, password is 'testing123'
 Open up a web brower e.g. Google Chrome
 Navigate to 192.168.4.2:8000
 
