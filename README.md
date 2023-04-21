@@ -48,3 +48,14 @@ In order to see a distro to control, you will need to navigate to the distros pa
 
 ## Future Development
 Allow socket name to be named rather than just displaying 'Socket 1'
+
+## Quick set up - wiring 
+
+The female XLR connector should be connected to the bench power supply; this should be done via the brown (live) connecting to the red output of the bench supply, and the blue (neutral) should be connected to the black output on the bench power supply. 
+
+To power the relays the yellow “neutral” should connect to the back of the second channel on the bench power supply and the brown ”live” should connect to the red of the second channel on the bench power supply.
+
+The ESP should be connected to power via the use of a USB, this can come from a 13A adapter or the USB connection on a laptop. This will allow the ESP to be powered.
+
+The bench power supply should be set to 12v and XLR connector should be supplied with 12v and 0.3Amps this is due to the potentiometer.
+The potentiometer is being used to allow the clear visuals on the graph of a ranging load thereby changing the current drawn. 
