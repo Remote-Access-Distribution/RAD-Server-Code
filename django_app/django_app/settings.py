@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-zvq5iqb!2*-+q#+$u_y4s)kek$+z!6wk_nl-xyo(t49()sy)4c
 DEBUG = False
 DATA_UPLOAD_MAX_NUMBER_FIELDS = 99999 # Allows more to be deleted at once
 
-ALLOWED_HOSTS = ["localhost", "100.74.80.252", "100.86.10.60", "1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa"]
+ALLOWED_HOSTS = ["localhost", "*"]
 
 INTERNAL_IPS = [
     "127.0.0.1",
