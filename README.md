@@ -22,7 +22,6 @@ cd desktop/<folder>
 python -m venv myenv
 myenv\Scripts\activate.bat
 pip install -r requirements.txt
-python manage.py createsuperuser
 ```
 
 In order to gain access the the \admin to edit and delete data you will need to create a superuser account. From the admin site you will be able to add additional users
