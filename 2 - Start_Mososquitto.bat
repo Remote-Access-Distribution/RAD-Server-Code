@@ -1,0 +1,1 @@
+start net start mosquitto
