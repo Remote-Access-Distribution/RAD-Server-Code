@@ -33,20 +33,16 @@ python manage.py createsuperuser
 Now everything is installed to run the web server
 
 ## Start up
-In order to start the server, there is a specific order to run everything otherwise there will be errors
-
 #### Windows:
-Firstly you will need to run the Mosquitto MQTT broker, this can be done by running `Start_Mosquitto.bat` as administrator.
-
-After that you can run `Startup.bat` which will start the necessary components for the product to run.
+`Startup.bat` will start the necessary components for the product to run.
 
 ## Shut down
 ### Windows:
-Close the two Command Prompts open.
+Close the three Command Prompts that are open.
 
 ## Usage
 Ensure you are connected to RAD-1 access point, password is 'Testing123'
-Open up a web brower e.g. Google Chrome
+Open up a web browser e.g. Google Chrome
 Navigate to 192.168.4.2:8000
 
 In order to see a distro to control, you will need to navigate to the distros page using the navigation bar and add a new distro and define its location if required, once the server starts recieving data from the ESP32 then you will be able to control using the buttons.
